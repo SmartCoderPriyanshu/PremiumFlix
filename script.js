@@ -1,7 +1,7 @@
 async function pay(){
 
 if(!document.getElementById("agree").checked){
-alert("कृपया नियम और शर्तें स्वीकार करें।");
+alert("कृपया नियम और शर्तें स्वीकार करें। ok");
 return;
 }
 
