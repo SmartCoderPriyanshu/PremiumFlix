@@ -35,7 +35,7 @@ contact:document.getElementById("uphone").value
 
 handler:function(res){
 
-fetch("http://127.0.0.1:5000/verify",{
+fetch("/verify",{
 
 method:"POST",
 
