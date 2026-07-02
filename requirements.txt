@@ -1,0 +1,4 @@
+flask
+razorpay
+flask-cors
+gunicorn

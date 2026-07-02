@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎬 Premium Movies – Unlimited Access</title>
+<link rel="icon" type="image/png" href="/web icon.png">
+<link rel="stylesheet" href="style.css">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo">🎬 PremiumFlix</div>
+  <div class="nav-links">
+    <a href="#features">फीचर्स</a>
+    <a href="#movies">मूवीज</a>
+    <a href="#terms">नियम</a>
+    <a href="#buy">खरीदें</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <span class="badge">✅ 10,000+ लोग जुड़ चुके हैं</span>
+    <h1>अनलिमिटेड प्रीमियम मूवीज</h1>
+    <p class="hero-sub">Hollywood, Bollywood, Web Series – सब कुछ एक जगह। सिर्फ <strong>₹5</strong> में लाइफटाइम एक्सेस।</p>
+    <div class="trust-row">
+      <span>🔒 100% सुरक्षित पेमेंट</span>
+      <span>↩️ 30 दिन मनी-बैक</span>
+      <span>⚡ तुरंत एक्सेस</span>
+    </div>
+  </div>
+</section>
+
+<!-- MOVIES GRID -->
+<section id="movies" class="section">
+  <h2 class="section-title">🎥 हमारी मूवी लाइब्रेरी</h2>
+  <div class="movies-grid">
+    <div class="movie-card">
+      <img src="https://i.redd.it/56n9zbo2iame1.jpeg" alt="Premium Movies">
+      <div class="movie-label">PlayStation Premium Collection</div>
+    </div>
+    <div class="movie-card">
+      <img src="https://i.redd.it/56n9zbo2iame1.jpeg" alt="Premium Movies 2">
+      <div class="movie-label">Hollywood Blockbusters</div>
+    </div>
+    <div class="movie-card">
+      <img src="https://i.redd.it/56n9zbo2iame1.jpeg" alt="Premium Movies 3">
+      <div class="movie-label">Bollywood Hits</div>
+    </div>
+    <div class="movie-card">
+      <img src="https://i.redd.it/56n9zbo2iame1.jpeg" alt="Premium Movies 4">
+      <div class="movie-label">Web Series & More</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section features-section">
+  <h2 class="section-title">🌟 आपको क्या मिलेगा?</h2>
+  <div class="features-grid">
+    <div class="feature-card">🎬<h3>5000+ मूवीज</h3><p>Hollywood से Bollywood तक सब कुछ</p></div>
+    <div class="feature-card">📺<h3>HD क्वालिटी</h3><p>1080p Full HD में देखें</p></div>
+    <div class="feature-card">📱<h3>सभी डिवाइस</h3><p>Mobile, Tablet, PC पर चलेगा</p></div>
+    <div class="feature-card">⚡<h3>तुरंत एक्सेस</h3><p>पेमेंट के बाद सेकंड में लिंक मिलेगा</p></div>
+    <div class="feature-card">🔄<h3>रोज नई मूवीज</h3><p>हर दिन नया कंटेंट अपडेट होता है</p></div>
+    <div class="feature-card">🔒<h3>प्राइवेट चैनल</h3><p>सिर्फ मेंबर्स के लिए एक्सक्लूसिव</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <h2 class="section-title">💬 लोग क्या कह रहे हैं?</h2>
+  <div class="testimonials">
+    <div class="testi-card">"बहुत बढ़िया सर्विस है! सिर्फ ₹5 में इतना कंटेंट मिल रहा है।" <br><strong>– Rahul, Delhi</strong></div>
+    <div class="testi-card">"पेमेंट के तुरंत बाद लिंक मिल गया। 100% भरोसेमंद।" <br><strong>– Priya, Mumbai</strong></div>
+    <div class="testi-card">"HD quality में सारी movies मिल रही हैं। बहुत खुश हूँ!" <br><strong>– Amit, Jaipur</strong></div>
+  </div>
+</section>
+
+<!-- BUY SECTION -->
+<section id="buy" class="section buy-section">
+  <div class="buy-box">
+    <div class="price-tag">सिर्फ <span>₹5</span> में लाइफटाइम एक्सेस</div>
+    <p class="buy-sub">एक बार पेमेंट करो, हमेशा के लिए एक्सेस पाओ</p>
+
+    <div class="form-group">
+      <input type="text" id="uname" placeholder="👤 आपका नाम">
+      <input type="email" id="uemail" placeholder="📧 Email Address">
+      <input type="tel" id="uphone" placeholder="📱 Mobile Number">
+    </div>
+
+    <div class="checkbox-row">
+      <input type="checkbox" id="agree">
+      <label for="agree">मैं <a href="#terms">नियम और शर्तें</a> से सहमत हूँ</label>
+    </div>
+
+    <button class="buy-btn" onclick="pay()">🔒 अभी खरीदें – ₹5 Only</button>
+
+    <div class="guarantee">↩️ 30 दिन मनी-बैक गारंटी | 🔒 Razorpay Secured</div>
+
+    <div id="result"></div>
+  </div>
+</section>
+
+<!-- TERMS -->
+<section id="terms" class="section terms-section">
+  <h2 class="section-title">📋 नियम और शर्तें</h2>
+  <div class="terms-box">
+    <p>1. एक बार की पेमेंट के बाद आपको Telegram प्राइवेट चैनल का लिंक मिलेगा।</p>
+    <p>2. यह लिंक सिर्फ आपके लिए है, इसे किसी के साथ शेयर न करें।</p>
+    <p>3. अगर किसी कारण से एक्सेस नहीं मिला, तो 30 दिन के अंदर रिफंड का अनुरोध कर सकते हैं।</p>
+    <p>4. रिफंड के लिए हमसे Telegram पर संपर्क करें।</p>
+    <p>5. कंटेंट केवल व्यक्तिगत उपयोग के लिए है।</p>
+    <p>6. हम किसी भी समय सर्विस में बदलाव करने का अधिकार रखते हैं।</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">🎬 PremiumFlix</div>
+  <p>© 2026 PremiumFlix. सभी अधिकार सुरक्षित।</p>
+  <p>📧 mrpriyanshusocial@gmail.com | 🔒 Secured by Razorpay</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
